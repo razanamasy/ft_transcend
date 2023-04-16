@@ -1,0 +1,42 @@
+#Co-form {
+  width: 20%;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  padding: 20px 50px 40px;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  font-family: sans-serif;
+}
+
+#Co-form * {
+    box-sizing: border-box;
+}
+
+#Co-form h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#Co-form input {
+  margin-bottom: 15px;
+}
+
+#Co-form input[type=text] {
+  display: block;
+  height: 32px;
+  padding: 6px 16px;
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+}
+
+.choice:hover {
+	text-decoration: underline;
+}
+
+.hide {
+	display: none;
+}
+
+.out {
+	display: none;
+}

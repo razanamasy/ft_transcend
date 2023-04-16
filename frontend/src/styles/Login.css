@@ -1,0 +1,7 @@
+.myAlert {
+	margin-top: 50px !important;
+	padding: 50px !important;
+	border-style: solid !important;
+    border-color: green !important;
+    border-width: 3px !important;
+}

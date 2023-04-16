@@ -1,0 +1,23 @@
+/*Button app bar*/
+.categ{
+	color: white;
+  padding-left: 10px;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+		font-family: Verdana,sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    padding-inline-start: 40px;
+		display: block;
+}
+
+
+/*THE FORM CO AND SUBS*/
+/*Formular connexion and login*/
+

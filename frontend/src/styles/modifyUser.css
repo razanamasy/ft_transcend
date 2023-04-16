@@ -1,0 +1,33 @@
+h4, .alert {
+	margin-left: 11% !important;
+	margin-right: 11% !important;
+}
+
+.form-label {
+
+	color: white;
+}
+
+.passForm {
+	margin-left: 11% !important;
+}
+
+.passControl {
+	width: 40% !important;
+}
+
+.alert-warning {
+	background-color: black !important;
+  border-color: #ff8a10 !important;
+  color: white !important;
+}
+
+.alert-primary {
+	background-color: black !important;
+  color: white !important;
+	border-color: #3673cd !important;
+}
+
+.mdp-button:hover {
+		background-color: green !important;
+}

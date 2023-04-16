@@ -1,0 +1,79 @@
+version: "3.6"
+
+services:
+  postgres:
+    image: postgres:14
+    container_name: postgres
+    expose: 
+        - "5432"
+    environment:
+      - POSTGRES_PASSWORD
+      - POSTGRES_USER
+      - POSTGRES_DB
+    networks:
+      - back_bdd
+      - adminer_bdd
+
+  backend:
+    image: backend
+    container_name: backend
+    build: ./backend
+    environment:
+      - JWT_SECRET
+      - JWT_OTHER_SECRET
+      - CLIENT_ID
+      - CLIENT_SECRET
+      - DATABASE_URL
+      - HOSTNAME42
+    depends_on:
+      - postgres
+    volumes:
+      - ./backend/src:/root/backend/src:rw
+    networks:
+      - back_bdd
+      - proxy_front_back
+
+  frontend:
+    image: frontend
+    container_name: frontend
+    build: ./frontend
+    volumes:
+      - ./frontend/src:/root/frontend/src:rw
+      - ./frontend/public:/root/frontend/public:rw
+    networks:
+      - proxy_front_back
+    environment:
+      - REACT_APP_HOSTNAME42
+      - REACT_APP_REDIRECT_URI
+
+  proxy:
+    image: nginx
+    container_name: proxy
+    ports:
+      - "3000:3000"
+      - "8000:8000"
+      - "8001:8001"
+    networks:
+      - proxy_front_back
+    volumes:
+      - ./proxy:/etc/nginx/conf.d:rw
+    depends_on:
+      - backend
+    logging:
+      driver: none
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    ports:
+      - "8080:8080"
+    networks:
+      - adminer_bdd
+
+networks:
+  back_bdd:
+    driver: "bridge"
+  proxy_front_back:
+    driver: "bridge"
+  adminer_bdd:
+    driver: "bridge"

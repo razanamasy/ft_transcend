@@ -1,0 +1,42 @@
+.oddStrip {
+	background-color: black !important;
+}
+
+.active {
+	background-color: transparent !important;
+}
+
+b {
+	color: green;
+}
+
+.nav-link {
+	color: white !important;
+}
+
+.card {
+		background-color: black !important;
+    color: white;
+		border-style: solid;
+}
+
+.card-body {
+		border-style: solid;
+		border-radius: 10px;
+		border-color: green! important;
+}
+
+.card-title {
+		border-bottom: solid;
+		color: green;
+}
+
+.list-group-item {
+	background-color: black !important;
+	color: white !important;
+	border: solid 1px green !important;
+}
+
+.friendList {
+		margin-top: 20px !important;
+}

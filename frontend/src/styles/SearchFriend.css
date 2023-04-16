@@ -1,0 +1,11 @@
+.searchFriend {
+	  display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.colSearch {
+padding-right: 0; 
+ padding-left: 0;
+}

@@ -1,0 +1,42 @@
+html, body, #root, #app, #app>div {
+  height: 100%;
+}
+
+h1, h2, h3, h4, p {
+	color: white;
+}
+
+.main-app {
+	background-color: black;
+  	height: 100%;
+		overflow: scroll;
+}
+
+.btn-primary {
+	background-color: green !important;
+	border-color: green !important;
+}
+
+.btn-outline-primary {
+	border-color: green !important;
+	color: white !important;
+}
+
+
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+	background-color: black;
+}
+
+.navbar {
+	z-index: 1;
+}
+
+.navbar,  .navbar-expand-lg, .navbar-light {
+    position: sticky !important;
+    top: 0 !important;
+}
+
+img {
+ border-radius: 50% !important;
+}

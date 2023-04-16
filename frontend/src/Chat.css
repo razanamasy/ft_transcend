@@ -1,0 +1,37 @@
+#chat-window{
+    height: 50vh;
+}
+
+#welcome-window
+{
+    height: 52vh;
+}
+
+#chat-messages{
+    height: 100%;
+    overflow: auto;
+    color:aliceblue;
+    color-scheme: dark;
+}
+
+#channel-list{
+    height: 62vh;
+    overflow: auto;
+    color-scheme: dark;
+}
+
+.listinvite
+{
+    overflow:auto;
+    height: 100%;
+}
+
+.GreenText
+{
+    color:green
+}
+
+.Paper
+{
+    background-color: #222;
+}

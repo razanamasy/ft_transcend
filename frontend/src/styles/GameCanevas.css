@@ -1,0 +1,66 @@
+main {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+}
+
+#scores{
+    text-align: center;
+    color: white
+}
+
+
+#game-buttons {
+    text-align: center;
+    color: black;
+    list-style: none;
+    padding: 0;
+}
+
+#game-button {
+    display: inline-block;
+
+}
+
+#button {
+	box-shadow: 4px 6px 7px -1px #3dc21b;
+	background-color: greenyellow;
+	border-radius:15px;
+    border-color: black;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	font-family:Courier New;
+	font-size:15px;
+	padding:7px 29px;
+	text-decoration:none;
+    margin : 10px;
+}
+#button:hover {
+	background-color:#5cbf2a;
+}
+#button:active {
+	position:relative;
+	top:1px;
+}
+
+#pong {
+	background-color: black;
+	text-align: center;
+}
+
+
+#canvas{
+	border-color: greenyellow;
+	width:  90%;
+	height: 90%;
+	max-height: 66vh;
+	max-width: 90vh;
+
+}
+
+#area
+{
+	max-height: 600px;
+}
+

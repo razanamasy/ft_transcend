@@ -1,0 +1,35 @@
+.nav-item {
+	font-size: 20px;
+}
+
+.form-control {
+	font-size: 15px;
+}
+
+.theme {
+    background-color: black !important;
+    border-bottom: solid;
+    border-color: green;
+}
+
+.textNav {
+	color: white !important;
+}
+
+.collapseButton {
+	background-color: green !important;
+}
+
+.collapseNotif {
+	background-color: red !important;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

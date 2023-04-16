@@ -1,0 +1,8 @@
+.card-body {
+		border-style: solid;
+		border-radius: 10px;
+}
+
+.card-title {
+		border-bottom: solid;
+}

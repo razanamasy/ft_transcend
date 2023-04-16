@@ -1,0 +1,11 @@
+.smallContainer {
+    max-width: 87%;
+    padding-top: 7px;
+    margin: auto;
+}
+
+.sectionSettings {
+	border-style: solid !important;
+    border-color: white;
+	border-width: thin !important;
+}
